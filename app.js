@@ -1,11 +1,12 @@
 $(function(){
 
+  const self = this;
+
   const appViewModel = {
-    personName: ko.observable('')
+    personName: ko.observable(''),
+    cities: ko.observableArray(["Boston", "New York", "London"])
   };
   
-  const applyHere = document.getElementById('apply-here');
+  ko.applyBindings(appViewModel);
 
-  ko.applyBindings(appViewModel, applyHere);
-
-})();
+});

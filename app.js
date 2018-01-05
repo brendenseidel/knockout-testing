@@ -1,7 +1,7 @@
 $(function(){
 
   const appViewModel = {
-    personName: ko.observable('Brenden')
+    personName: ko.observable('')
   };
   
   const applyHere = document.getElementById('apply-here');
@@ -9,4 +9,3 @@ $(function(){
   ko.applyBindings(appViewModel, applyHere);
 
 })();
-

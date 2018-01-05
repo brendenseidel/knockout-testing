@@ -1,10 +1,12 @@
 $(function(){
-  
-  let appViewModel = {
+
+  const appViewModel = {
     personName: 'Brenden'
   };
   
-  (ko.applyBindings(appViewModel));
+  const applyHere = document.getElementById('apply-here');
+
+  ko.applyBindings(appViewModel, applyHere);
 
 })();
 
